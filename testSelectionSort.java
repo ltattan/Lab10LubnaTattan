@@ -18,7 +18,11 @@ public class testSelectionSort {
 
     public void testPositive(){
 <<<<<<< HEAD
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> mixed_duplicate
     }
 
     public void testNegative(){
@@ -70,6 +74,17 @@ for(int i = 0; i<arr.length;++i) {
 
 
     public void testMixed(){
+      int[] mixes_arr = new int[5];
+      mixes_arr[0] = -8;
+      mixes_arr[1] = 9;
+      mixes_arr[2] = 7;
+      mixes_arr[3] = 0;
+      mixes_arr[4] = -2;
+      SelectionSort selectionsort = new SelectionSort();
+      selectionsort.basicSelectionSort(mixes_arr);
+      for(int i = 0; i<mixes_arr.length;++i) {
+        System.out.println("Mixed Array: " + mixes_arr[i]);
+      }
 
 <<<<<<< HEAD
         }
@@ -80,10 +95,25 @@ for(int i = 0; i<arr.length;++i) {
     public void testDuplicates(){
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> positive_negative
+=======
+    	int[] duplicate_arr = new int[5];
+        duplicate_arr[0] = -8;
+        duplicate_arr[1] = 9;
+        duplicate_arr[2] = 7;
+        duplicate_arr[3] = 9;
+        duplicate_arr[4] = -8;
+        SelectionSort selectionsort = new SelectionSort();
+        selectionsort.basicSelectionSort(duplicate_arr);
+        for(int i = 0; i < duplicate_arr.length;++i) {
+        	System.out.println("Duplicate Array: " + duplicate_arr[i]);
+        }
+
+>>>>>>> mixed_duplicate
     }
 
 
